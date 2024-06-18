@@ -1,0 +1,68 @@
+.image-gallery {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.gallery-image {
+  width: 100px; /* Puedes ajustar este valor según tus necesidades */
+  height: 100px; /* Puedes ajustar este valor según tus necesidades */
+  margin: 10px;
+}
+.active {
+  background-color: #f1f519; /* Cambia el color a tu gusto */
+}
+
+
+@media (max-width: 600px) {
+  .image-gallery {
+    flex-direction: column;
+  }
+}
+.component-container {
+  border: 1px solid #ccc;
+  padding: 20px;
+  margin: 20px auto;
+  max-width: 600px;
+}
+
+/* Agrega otros estilos según sea necesario */
+.center-text {
+  text-align: center;
+}
+
+footer nav {
+  display: flex;
+  justify-content: center;
+}
+
+footer nav button {
+  margin: 0 5px;
+}
+.center {
+  text-align: center;
+}
+.small-paragraph {
+  font-size: 14px;
+}
+.two-columns {
+  display: flex;
+  justify-content: space-between;
+}
+
+.two-columns > div {
+  flex: 0 0 48%; /* Ajusta el ancho de las columnas según necesites */
+}
+
+@media (max-width: 768px) {
+  .two-columns {
+    flex-direction: column;
+  }
+
+  .two-columns > div {
+    flex: 1; /* Para que las columnas ocupen todo el ancho en dispositivos móviles */
+    margin-bottom: 10px; /* Espacio entre los párrafos en dispositivos móviles */
+  }
+}
+
+
